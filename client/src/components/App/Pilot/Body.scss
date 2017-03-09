@@ -1,0 +1,11 @@
+$light-grey: #FAFAFA;
+
+.content-wrapper {
+	background-color: $light-grey;
+	display: flex;
+	flex: 0 1 auto;
+	flex-direction: row;
+	flex-wrap: wrap;
+	overflow-x: hidden;
+    padding: 0px 20px;
+}

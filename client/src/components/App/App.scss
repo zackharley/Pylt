@@ -1,0 +1,12 @@
+.app-body {
+	font-family: 'Open Sans', sans-serif;
+	height: 100vh;
+	margin: 0px;
+	overflow-x: hidden;
+}
+
+.app-wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}

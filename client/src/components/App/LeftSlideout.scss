@@ -1,0 +1,31 @@
+$header-height: 61px;
+
+.left-slideout {
+    background-color: white;
+    height: calc(100vh - 61px);
+    left: -300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: $header-height;
+    transition: 0.5s;
+    width: 300px;
+    z-index: 10;
+}
+
+.left-slideout-open {
+	left: 0px;
+}
+
+.left-slideout::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+.left-slideout::-webkit-scrollbar {
+    width: 12px;
+}
+
+.left-slideout::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+}

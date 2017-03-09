@@ -1,0 +1,99 @@
+$blue: #275174;
+$grey: #d0d0d0;
+
+.login-form {
+	display: flex;
+    flex-direction: column;
+    min-width: 50%;
+}
+
+.login-form__input {
+	border: 1px solid $grey;
+    border-radius: 2px;
+    margin: 10px 0;
+	padding: 10px 14px;
+}
+
+.login-form__middle-row {
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+}
+
+.login-form__remember-wrapper {
+    align-items: center;
+	display: flex;
+    flex-direction: row;
+}
+
+.login-form__remember-checkbox {
+	display: none;
+  	padding: 15px 25px 15px 25px;
+}
+
+.login-form__remember-label {
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	margin-right: 15px;
+	padding-left: 25px;
+	position: relative;
+	user-select: none;
+}
+
+.login-form__remember-label:before {
+    align-items: center;
+    background-color: $blue;
+    bottom: 1px;
+    box-shadow: inset 0px 2px 3px 0px transparent, 0px 1px 0px 0px rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    content: '';
+    display: flex;
+    height: 16px;
+    justify-content: center;
+    left: 0;
+    margin-right: 10px;
+    padding: 1px;
+    position: absolute;
+    width: 16px;
+}
+
+.login-form__remember-checkbox:checked + .login-form__remember-label:before {
+  	color: white;
+  	content: '\2713';
+  	font-size: 15px;
+  	line-height: 15px;
+  	text-align: center;
+}
+
+.login-form__forgot-link {
+	color: $blue;
+	font-size: 14px;
+	margin-left: auto;
+}
+
+.login-form__sign-in {
+	background-color: $blue;
+	border-radius: 4px;
+    color: white;
+    margin: 40px 0;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.login-form__bottom-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.login-form__register-text {
+	color: #727272;
+	font-size: 14px;
+	margin: 0;
+}
+
+.login-form__register-link {
+	color: $blue;
+}

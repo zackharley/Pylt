@@ -1,0 +1,32 @@
+.app-header {
+	background-color: white;
+	border-bottom: 1px solid rgba(230,230,230,0.7);
+	display: flex;
+	flex: 0 1 60px;
+	flex-direction: row;
+	min-height: 60px;
+}
+
+.app-header__icon-wrapper {
+    align-items: center;
+    color: #303133;
+    cursor: pointer;
+	display: flex;
+    font-size: 16px;
+    justify-content: center;
+    padding: 30px;
+}
+
+.app-header__icon-wrapper--right-align {
+	margin-left: auto;
+}
+
+.app-header__logo-wrapper {
+	color: #303133;
+	text-decoration: none;
+}
+
+.app-header__logo {
+	height: 30px;
+    margin: 15px;
+}

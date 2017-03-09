@@ -1,0 +1,16 @@
+$header-height: 61px;
+
+.right-slideout {
+    background-color: #DFDCE3;
+    height: calc(100vh - 61px);
+    left: 100vw;
+    position: absolute;
+    top: $header-height;
+    transition: 0.5s;
+    width: 400px;
+    z-index: 8;
+}
+
+.right-slideout-open {
+	left: calc(100vw - 400px);
+}

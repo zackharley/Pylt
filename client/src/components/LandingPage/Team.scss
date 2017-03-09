@@ -1,0 +1,98 @@
+$black: #121212;
+$height: 100vh;
+$white: white;
+
+.team {
+	background-image: url(/images/landing_page/team-background.jpg);
+	background-position: center;
+	background-size: cover;
+	height: $height;
+	width: 100%;
+}
+
+.team--overlay {
+	background: rgba(0, 0, 0, 0.5);;
+	height: $height;
+	left: 0;
+	position: absolute;
+	top: 500vh;
+	width: 100%;
+	z-index: 1;
+}
+
+.team__wrapper {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	height: calc(100% - 70px);
+	padding: 70px 100px 0 100px;
+	width: calc(100% - 200px);
+}
+
+.team__header {
+	color: $white;
+	font-weight: 400;
+    font-size: 40px;
+    margin: 20px 0 0 0;
+    z-index: 2;
+}
+
+.team__sub-header {
+	color: $white;
+    font-weight: 300;
+    margin: 40px 200px;
+	text-align: justify;
+	z-index: 2;
+}
+
+.team__headshots {
+	display: flex;
+	flex: 1 1 auto;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    z-index: 2;
+}
+
+.team__subscribe {
+	align-items: center;
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+	z-index: 2;
+}
+
+.team__subscribe__header {
+	color: $white;
+}
+
+.team__subscribe__input-wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+.team__subscribe__input {
+    border: none;
+    color: $black;
+    font-family: Roboto, sans-serif;
+	padding: 10px 20px;
+}
+
+.team__subscribe__input:focus {
+	outline: none;
+}
+
+.team__subscribe__btn {
+	background-color: $black;
+    border: none;
+    cursor: pointer;
+    color: $white;
+    font-family: Roboto;
+    padding: 10px;
+    transition: 0.5s;
+    width: 120px;
+}
+
+.team__subscribe__btn:focus {
+	outline: none;
+}

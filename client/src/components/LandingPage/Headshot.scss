@@ -1,0 +1,49 @@
+$blue: #A4C1D7;
+
+.headshot {
+    align-items: center;
+	display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.headshot__image {
+	background-size: cover;
+	height: 200px;
+	width: 200px;
+}
+
+.headshot__image--overlay {
+    align-items: center;
+	display: flex;
+	height: 100%;
+    justify-content: center;
+	visibility: hidden;
+    width: 100%;
+}
+
+.headshot__image:hover > .headshot__image--overlay {
+	background-color: rgba(39, 81, 116, 0.7);
+	visibility: visible;
+}
+
+.headshot__linkedin {
+	color: white;
+	font-size: 40px;
+	padding: 20px;
+}
+
+.headshot__name {
+	color: white;
+    font-size: 20px;
+    font-weight: 400;
+	margin: 20px 0 10px 0;
+    text-transform: uppercase;
+}
+
+.headshot__position {
+    color: $blue;
+    font-size: 12px;
+	margin: 0;
+    text-transform: uppercase;
+}

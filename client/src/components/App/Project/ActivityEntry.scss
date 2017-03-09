@@ -1,0 +1,23 @@
+.activity-entry {
+
+  .syndication,
+  .content {
+    padding: 10px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 3px;
+
+    .right {
+      width: auto;
+      margin:0;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  p.time {
+    color: #333;
+  }
+}

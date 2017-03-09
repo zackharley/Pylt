@@ -1,0 +1,60 @@
+.footer {
+	align-items: center;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+	padding: 0 100px;
+	width: 100%;
+	z-index: 2;
+}
+
+.footer__contact-header {
+    flex: 1 1 auto;
+}
+
+.footer__email {
+	color: black;
+    flex: 1 1 auto;
+	text-decoration: none;
+    transition: 0.2s;
+}
+
+.footer__email:hover {
+	color: #555;
+}
+
+.footer__bottom-wrapper {
+	align-items: center;
+	display: flex;
+    flex: 1 1 auto;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.footer__copyright {
+	color: #555;
+	width: 260px;
+}
+
+.footer__logo {
+	height: 20px;
+}
+
+.footer__social {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	width: 240px;
+}
+
+.footer__social-link {
+	color: black;
+    margin: 0 16px;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.footer__social-link:hover {
+	color: #555;
+}
