@@ -23,7 +23,8 @@ const data = [
     _id: '2',
     name: 'gitStarted',
     description: 'A fun developer tool.',
-    image: 'http://www.innovus.org/wp-content/uploads/2016/09/shutterstock-programming-1.jpg',screens: [
+    image: 'http://www.innovus.org/wp-content/uploads/2016/09/shutterstock-programming-1.jpg',
+    screens: [
       {
         name: 'Home Page',
         image: 'https://d13yacurqjgara.cloudfront.net/users/96387/screenshots/1926297/attachments/331368/Normal.png'

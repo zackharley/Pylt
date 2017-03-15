@@ -1,0 +1,12 @@
+$light-grey: #FAFAFA;
+
+.projects-page {
+	background-color: $light-grey;
+	height: calc(100vh - 61px);
+}
+
+.projects-page__title {
+    font-size: 24px;
+	margin: 10px 0 4px 25px;
+}
+

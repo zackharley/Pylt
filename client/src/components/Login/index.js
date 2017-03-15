@@ -7,7 +7,7 @@ export default class Login extends Component {
 
 	render() {
 		return(
-			<section className='login'>
+			<section className='auth'>
 				<LoginLeft />
 				<LoginRight />
 			</section>

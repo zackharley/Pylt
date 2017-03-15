@@ -1,0 +1,48 @@
+.rs-activity-feed {
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .activity_heading {
+    background-color: #3274A4;
+    color: #FFFFFF;
+    min-height: 200px;
+    display: flex;
+    flex: 0 1 auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+  }
+
+  .activity_list {
+    flex: 1 1 auto;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      color: #303133;
+      margin-top: 15px;
+    }
+
+    li:first-child {
+      margin: 0;
+    }
+  }
+
+  .activity_entry {
+    background-color: #f1f1f1;
+    border: none;
+    color: #303133;
+    flex: 0 1 auto;
+    font-size: 18px;
+    height: 40px;
+    padding: 0px 8px;
+  }
+
+  .activity_entry:focus {
+    outline: none;
+  }
+
+}

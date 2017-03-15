@@ -19,9 +19,9 @@ export default class LoginForm extends Component {
 
 	render() {
 		return (
-			<form className='login-form'>
-				<input className='login-form__input' type='email' placeholder='Email Address' />
-				<input className='login-form__input' type='password' placeholder='Password' />
+			<form className='auth-form'>
+				<input className='auth-form__input' type='email' placeholder='Email Address' />
+				<input className='auth-form__input' type='password' placeholder='Password' />
 				<section className='login-form__middle-row'>
 					<section className='login-form__remember-wrapper'>
 						<input
@@ -41,13 +41,14 @@ export default class LoginForm extends Component {
 					</section>
 					<Link className='login-form__forgot-link'>Forgot your password?</Link>
 				</section>
-				<Link className='login-form__sign-in' to='/app'>Sign In</Link>
+				<Link className='auth-form__submit-btn' to='/app'>Sign In</Link>
 				<section className='login-form__bottom-row'>
 					<p className='login-form__register-text'>
-						Don't have an account yet? - <Link className='login-form__register-link'>Register here</Link>.
+						Don't have an account yet? - <Link to='/register' className='login-form__register-link'>Register here</Link>.
 					</p>
 				</section>
 			</form>
 		);
 	}
+
 }

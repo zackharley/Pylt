@@ -1,0 +1,251 @@
+.project {
+  width: 100%;
+  height: calc(100% - 77px);
+  margin-top:77px;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+
+  .left {
+    flex: 1;
+    padding: 0 20px;
+
+    .project_info {
+      display: flex;
+      flex-direction: row;
+
+      .left {
+        flex: 1;
+
+        .project_title {
+
+        }
+      }
+
+      .right_menu {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+
+        .show_team,
+        .show_new_screen {
+          cursor: pointer;
+          height: 50px;
+          width: 50px;
+          display: inline-block;
+          float: right;
+          line-height:50px;
+          text-align: center;
+        }
+
+        .show_team {
+          cursor: pointer;
+          position: relative;
+
+          &:after {
+            color: black;
+            content: '\f0c0';
+            font-family: 'FontAwesome';
+            font-size: 25px;
+          }
+
+          .add_team_member {
+            display: none;
+            position: absolute;
+            width: 150px;
+            height: 200px;
+            left: 0;
+            top: 50px;
+            background-color: #ccc;
+            left: -100px;
+            z-index: 201;
+
+            .container {
+              width: 100%;
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+
+              input {
+                height: 20px;
+                margin: 3px;
+              }
+
+              ul {
+                flex: 1;
+                display: block;
+
+                li {
+                  flex: none;
+                  margin: 5px;
+
+                  font-size: 12px;
+                  background-color: white;
+
+                  img {
+
+                  }
+                }
+
+              }
+            }
+          }
+
+          .add_team_member.show {
+            display: block;
+          }
+        }
+
+        .show_new_screen {
+          background-color: #3274A4;
+          width: 70px;
+          &:after {
+            color: white;
+            content: '\f067';
+            font-family: 'FontAwesome';
+            font-size: 25px;
+          }
+        }
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      flex-flow: row wrap;
+
+      li {
+        flex: 1;
+        margin-top:60px;
+      }
+    }
+
+  }
+
+    .right {
+      width: 250px;
+    }
+
+  .new_screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 165, 0, 0.80);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 201;
+
+    .container {
+      width: 800px;
+      position:relative;
+      margin-bottom: 200px;
+
+      h1 {
+        color: white;
+        text-align: center;
+      }
+
+      .exit {
+        cursor: pointer;
+        position: absolute;
+        top:0;
+        right:0;
+        transform: rotate(45deg);
+
+        &:after {
+          color: white;
+          content: '\f067';
+          font-family: 'FontAwesome';
+          font-size: 25px;
+        }
+      }
+
+      .box {
+        background-color: #ccc;
+
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          flex-direction: row;
+          flex-flow: row wrap;
+
+          li {
+            flex: 1;
+            padding: 10px;
+
+            .screen_image {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              width: 100px;
+              height: 100px;
+              background-color: white;
+
+              .screen_image_add {
+
+              }
+            }
+
+            .text {
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .show_screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 201;
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      background-color: rgba(0, 0, 0, 0.64);
+      position: relative;
+      padding: 30px;
+      height: calc(100% - 60px - 77px);
+
+      img {
+        flex: 1;
+        height: 100%;
+      }
+
+      .activity {
+        width: 200px;
+
+        .acitivy_sidebar {
+          position: initial;
+        }
+      }
+
+      .exit {
+        position: absolute;
+        top: 35px;
+        right: 35px;
+        width: 25px;
+        height: 25px;
+        transform: rotate(45deg);
+
+        &:after {
+          color: black;
+          content: '\f067';
+          font-family: 'FontAwesome';
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}

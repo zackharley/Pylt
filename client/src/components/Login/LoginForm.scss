@@ -1,13 +1,14 @@
 $blue: #275174;
+$dark-grey: #666;
 $grey: #d0d0d0;
 
-.login-form {
+.auth-form {
 	display: flex;
     flex-direction: column;
     min-width: 50%;
 }
 
-.login-form__input {
+.auth-form__input {
 	border: 1px solid $grey;
     border-radius: 2px;
     margin: 10px 0;
@@ -72,7 +73,7 @@ $grey: #d0d0d0;
 	margin-left: auto;
 }
 
-.login-form__sign-in {
+.auth-form__submit-btn {
 	background-color: $blue;
 	border-radius: 4px;
     color: white;

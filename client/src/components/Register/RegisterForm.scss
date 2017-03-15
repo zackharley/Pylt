@@ -1,0 +1,13 @@
+$dark-grey: #666;
+$grey: #d0d0d0;
+
+.register-form__input {
+	border: 1px solid $grey;
+    border-radius: 2px;
+    margin: 4px 0 10px 0;
+	padding: 10px 14px;
+}
+
+.register-form__input-label {
+    color: $dark-grey;
+}

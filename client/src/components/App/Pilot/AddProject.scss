@@ -1,0 +1,21 @@
+.add-project {
+    align-items: center;
+	background-color: #a4c1d7;
+    cursor: pointer;
+    display: flex;
+    flex: 1 1 300px;
+    flex-direction: column;
+    height: 250px;
+    justify-content: center;
+    margin: 10px 5px;
+    min-width: 300px;
+    max-width: 300px;
+}
+
+.add-project__icon-stack {
+	font-size: 26px;
+}
+
+.add-project__icon-circle {
+	color: #275174;
+}

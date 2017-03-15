@@ -6,8 +6,8 @@ export default class LoginRight extends Component {
 
 	render() {
 		return (
-			<section className='login-right'>
-				<img className='login-right__logo' src='/images/logo.png' />
+			<section className='auth-right'>
+				<img className='auth-right__logo' src='/images/logo.png' />
 				<LoginForm />
 			</section>
 		);
